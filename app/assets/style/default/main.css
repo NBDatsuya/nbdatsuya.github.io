@@ -1,0 +1,10 @@
+[data-theme='default'] {
+    --font-family: 'Inter', 'InterVar', sans-serif;
+    font-feature-settings: "cv01", "cv03", "cv09", "cv11", "zero";
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
