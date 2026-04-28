@@ -15,6 +15,7 @@
 </template>
 
 <style scoped>
+@reference "~/assets/style/main.css";
 .header-navbar {
   @apply text-center;
 }

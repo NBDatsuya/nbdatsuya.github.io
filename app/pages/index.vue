@@ -16,13 +16,13 @@ definePageMeta({
 <template>
   <div class="the-fucking-classical-page">
 
-    <NavigateBar/>
-    <LanguageBar/>
+    <NavigateBar />
+    <LanguageBar />
     <main>
       <center>
         <h1 class="title-cn">NBDatsuya的主页欢迎您！</h1>
         <h1 class="title-en">Welcome to NBDatsuya's homepage!</h1>
-        <img alt="my-portrait" src="https://avatars.githubusercontent.com/u/92795619?v=4" width="270"/>
+        <img alt="my-portrait" src="https://avatars.githubusercontent.com/u/92795619?v=4" width="270" />
       </center>
       <p>
         大家好 👋 NBDatsuya是也。玩具系统学徒，从事Web前端和游戏开发，也略玩一点后端。目前在某中厂上班，研究和学习游戏开发，争取自己出来做独立游戏。
@@ -52,13 +52,14 @@ definePageMeta({
       </ul>
     </main>
 
-    <RelatedLinkBar/>
-    <NavigateBar/>
+    <RelatedLinkBar />
+    <NavigateBar />
   </div>
 </template>
 
 <style scoped>
-@reference "tailwindcss";
+@reference "~/assets/style/main.css";
+
 .the-fucking-classical-page {
   @apply m-2 lg:max-w-7xl xl:mx-auto;
 }

@@ -44,22 +44,23 @@ definePageMeta({
 
 <template>
   <div class="the-fucking-classical-page">
-    <NavigateBar/>
-    <LanguageBar/>
-    <Content/>
-    <RelatedLinkBar/>
-    <NavigateBar/>
+    <NavigateBar />
+    <LanguageBar />
+    <Content />
+    <RelatedLinkBar />
+    <NavigateBar />
   </div>
 </template>
 
 <style>
-@reference "tailwindcss";
+@reference "~/assets/style/main.css";
+
 .the-fucking-classical-page {
   @apply m-2 lg:max-w-7xl xl:mx-auto;
 }
 
 h1.title-cn {
-  @apply block text-[2em] text-[var(--text-color)];
+  @apply block text-[2em] text-(--text-color);
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
   margin-inline-start: 0;

@@ -35,6 +35,7 @@ const linkFormatter = (item: LanguageNavItem): string => {
 </template>
 
 <style scoped>
+@reference "~/assets/style/main.css";
 .language-navbar {
   @apply text-center;
 }
