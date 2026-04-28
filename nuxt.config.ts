@@ -4,11 +4,11 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["@nuxt/eslint", "@nuxt/ui", "@nuxtjs/google-fonts"],
+  modules: ["@nuxt/ui"],
   vite: {
     plugins: [tailwindcss()]
   },
-  css: ["./app/assets/style/main.css"],
+  css: ["~/assets/style/main.css"],
   devServer: {
     port: 8099
   },
@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   },
   app: {
     baseURL: "/",
-    buildAssetsDir: "assets",
+    buildAssetsDir: "_nuxt",
 
     head: {
       script: [
