@@ -18,10 +18,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/",
     buildAssetsDir: "assets",
-	ssr:true,
-	nitro:{
-		preset:'github-pages'
-	},
+
     head: {
       script: [
         // 防闪烁脚本
@@ -46,5 +43,8 @@ export default defineNuxtConfig({
       ]
     }
   },
-  ssr: true
+  ssr: true,
+  nitro: {
+    preset: "github-pages"
+  }
 });
