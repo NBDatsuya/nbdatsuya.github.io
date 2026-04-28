@@ -1,0 +1,46 @@
+[data-theme='tfr'] {
+    --light-purple: #7F4D9F;
+    --dark-purple: #DE47A3;
+    --darkest-purple: #7e29a5;
+    --moderate-purple: #B75DCC;
+    --dark-bg: rgb(8, 3, 9);
+    --header-bg: rgb(76, 48, 81);
+    --text-color: rgb(247, 233, 250);
+
+    --font-family: 'TFR-Font';
+}
+
+@font-face {
+    font-family: 'TFR-Font';
+    src: url('/font/unifont-14.0.04.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+[data-theme='tfr'] body {
+    background-color: var(--dark-bg);
+    --ui-bg: var(--dark-bg);
+    --ui-text: var(--text-color);
+}
+
+[data-theme='tfr'] body.dark {
+    background-color: var(--dark-bg);
+    --ui-bg: var(--dark-bg);
+    --ui-text: var(--text-color);
+}
+
+[data-theme='tfr'] a {
+    color: var(--darkest-purple);
+    font-weight: bold;
+}
+
+[data-theme='tfr'] ::selection {
+    background-color: var(--moderate-purple);
+    color: var(--color-slate-200);
+}
+
+[data-theme='tfr'] ::-moz-selection {
+    background-color: var(--moderate-purple);
+    color: var(--color-slate-200);
+}
