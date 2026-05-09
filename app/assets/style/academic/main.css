@@ -1,0 +1,90 @@
+/**
+ * Academic Theme (theme-a)
+ * 学院派黑白风格 - 经典、严肃、学术感
+ */
+
+[data-theme="academic"] {
+  /* 亮色模式变量 */
+  --bg-main: #ffffff;
+  --bg-sidebar: #f2f2f2;
+  --text: #000000;
+  --link: #0000ee;
+  --link-hover: #ff4500;
+  --border: #000000;
+  --muted: #555555;
+  --input-bg: #ffffff;
+
+  --font-family: "Inter", "InterVar", sans-serif;
+  font-feature-settings: "cv01", "cv03", "cv09", "cv11", "zero";
+}
+
+/* 暗色模式 - 系统偏好 */
+@media (prefers-color-scheme: dark) {
+    [data-theme='academic'] {
+        --bg-main: #121212;
+        --bg-sidebar: #000000;
+        --text: #ffffff;
+        --link: #8ab4f8;
+        --link-hover: #ff7b72;
+        --border: #444444;
+        --muted: #aaaaaa;
+        --input-bg: #1a1a1a;
+    }
+}
+
+/* 暗色模式 - 手动切换 */
+[data-theme='academic'] body.dark,
+[data-theme='academic'].dark {
+    --bg-main: #121212;
+    --bg-sidebar: #000000;
+    --text: #ffffff;
+    --link: #8ab4f8;
+    --link-hover: #ff7b72;
+    --border: #444444;
+    --muted: #aaaaaa;
+    --input-bg: #1a1a1a;
+}
+
+/* 布局样式 */
+[data-theme="academic"] body {
+  background-color: var(--bg-main);
+  color: var(--text);
+  transition:
+    background 300ms,
+    color 300ms;
+}
+
+[data-theme="academic"] aside {
+  background-color: var(--bg-sidebar);
+  border-right: 1px solid var(--border);
+}
+
+[data-theme="academic"] a {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+[data-theme="academic"] a:hover {
+  color: var(--link-hover);
+}
+
+[data-theme="academic"] ::selection {
+  background-color: var(--text);
+  color: var(--bg-main);
+}
+
+[data-theme="academic"] ::-moz-selection {
+  background-color: var(--text);
+  color: var(--bg-main);
+}
+
+/* 输入框样式 */
+[data-theme="academic"] .sidebar-input {
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+[data-theme="academic"] .sidebar-input:focus {
+  border-color: var(--link);
+}

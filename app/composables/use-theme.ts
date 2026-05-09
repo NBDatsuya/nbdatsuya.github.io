@@ -8,6 +8,8 @@ export const useTheme = () => {
 	const fonts = [
 		{id: 'default', name: 'Default'},
 		{id: 'tfr', name: 'The Fire Rises'},
+		{id: 'academic', name: 'Academic'},
+		{id: 'modern', name: 'Modern Minimalist'},
 	]
 
 	// 2. 创建一个 state，并从 <html> 属性初始化它

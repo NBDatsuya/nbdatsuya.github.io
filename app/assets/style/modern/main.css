@@ -1,0 +1,90 @@
+/**
+ * Modern Theme (theme-b)
+ * 现代极简风格 - 柔和、现代、科技感
+ */
+
+[data-theme="modern"] {
+  /* 亮色模式变量 */
+  --bg-main: #fdfdfd;
+  --bg-sidebar: #f8f9fa;
+  --text: #333333;
+  --link: #4a90e2;
+  --link-hover: #2c5282;
+  --border: #e2e8f0;
+  --muted: #718096;
+  --input-bg: #ffffff;
+
+  --font-family: "Inter", "InterVar", sans-serif;
+  font-feature-settings: "cv01", "cv03", "cv09", "cv11", "zero";
+}
+
+/* 暗色模式 - 系统偏好 */
+@media (prefers-color-scheme: dark) {
+  [data-theme="modern"] {
+    --bg-main: #1a1a1a;
+    --bg-sidebar: #161616;
+    --text: #cccccc;
+    --link: #58a6ff;
+    --link-hover: #a5d6ff;
+    --border: #30363d;
+    --muted: #8b949e;
+    --input-bg: #252525;
+  }
+}
+
+/* 暗色模式 - 手动切换 */
+[data-theme="modern"] body.dark,
+[data-theme="modern"].dark {
+  --bg-main: #1a1a1a;
+  --bg-sidebar: #161616;
+  --text: #cccccc;
+  --link: #58a6ff;
+  --link-hover: #a5d6ff;
+  --border: #30363d;
+  --muted: #8b949e;
+  --input-bg: #252525;
+}
+
+/* 布局样式 */
+[data-theme="modern"] body {
+  background-color: var(--bg-main);
+  color: var(--text);
+  transition:
+    background 300ms,
+    color 300ms;
+}
+
+[data-theme="modern"] aside {
+  background-color: var(--bg-sidebar);
+  border-right: 1px solid var(--border);
+}
+
+[data-theme="modern"] a {
+  color: var(--link);
+  transition: color 300ms;
+}
+
+[data-theme="modern"] a:hover {
+  color: var(--link-hover);
+}
+
+[data-theme="modern"] ::selection {
+  background-color: var(--link);
+  color: #ffffff;
+}
+
+[data-theme="modern"] ::-moz-selection {
+  background-color: var(--link);
+  color: #ffffff;
+}
+
+/* 输入框样式 */
+[data-theme="modern"] .sidebar-input {
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+[data-theme="modern"] .sidebar-input:focus {
+  border-color: var(--link);
+}
